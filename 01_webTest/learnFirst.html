@@ -13,5 +13,37 @@
 			<li class = "sale">Cheese</li>
 			<li class = "sale important">Milk</li>
 		</ul>
+		<script>
+			//alert(typeof document.getElementById("purchase"));
+			//alert(document.getElementsByTagName("li").length);
+			
+			/*
+			var items = document.getElementsByTagName("li");
+			for (var i = 0; i < items.length; i++)
+			{
+				alert(typeof(items[i]));
+			}
+			*/
+			
+			//alert("The number of tags : " + document.getElementsByTagName("*").length);
+			
+			/*
+			var shopping = document.getElementById("purchase");
+			var items = shopping.getElementsByTagName("*");
+			alert("The number of purchase tags : " + items.length);*/
+			
+			/*
+			var paras = document.getElementsByTagName("p");
+			for (var i = 0; i < paras.length; i++) {
+				alert(paras[i].getAttribute("title"));
+			}
+			*/
+			
+			var shopping = document.getElementById("purchase");
+			alert("shopping's title: " + shopping.getAttribute("title"));
+			shopping.setAttribute("title", "a list of goods");
+			alert("shopping's title: " + shopping.getAttribute("title"));
+			
+		</script>
 	</body>
 </html>
